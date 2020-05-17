@@ -1,3 +1,3 @@
-module github.com/ticketron/requesties
+module github.com/callticketron/requesties
 
 go 1.14
