@@ -1,7 +1,6 @@
-package main
+package requesties
 
 import (
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -25,9 +24,4 @@ func Get(url string) *Response {
 
 	bodystring := string(body)
 	return &Response{response: bodystring}
-}
-
-func main() {
-	a := Get("http://www.google.com")
-	fmt.Println(a.response)
 }
