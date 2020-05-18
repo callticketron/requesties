@@ -11,7 +11,7 @@ type Response struct {
 }
 
 func Get(url string) *Response {
-	resp, err := http.Get("https://www.google.com")
+	resp, err := http.Get(url)
 	if err != nil {
 		log.Fatal(err)
 	}
